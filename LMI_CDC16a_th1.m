@@ -1,6 +1,6 @@
 function flag=LMI_CDC16a_th1(A,B,K,h,r0,etaM,r1,muM,alpha)
 % This MATLAB program checks the feasibility of LMIs from Theorem 1 of the paper 
-% A. Selivanov and E. Fridman, "Predictor-based networked control in the presence of uncertain time-varying delays," in 55th IEEE Conference on Decision and Control, 2016.
+% A. Selivanov and E. Fridman, "Predictor-based networked control in the presence of uncertain time-varying delays," in 55th IEEE Conference on Decision and Control, 2016, pp. 501–506.
 
 % The program uses YALMIP parser (http://users.isy.liu.se/johanl/yalmip/)
 % and SeDuMi solver (http://sedumi.ie.lehigh.edu/)
@@ -83,5 +83,5 @@ if sol.problem==0
     [primal,~]=check(LMIs); % Checking that the solver returned a proper solution
     flag=(min(primal)>=0 && primal(2)>0); 
 else
-    yalmiperror(sol.problem); 
+    yalmiperror(sol.problem) 
 end
