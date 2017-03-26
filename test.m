@@ -1,5 +1,5 @@
 % This MATLAB program checks the feasibility of LMIs from Theorems 1 and 2 of the paper 
-% A. Selivanov and E. Fridman, "Predictor-based networked control in the presence of uncertain time-varying delays," in 55th IEEE Conference on Decision and Control, 2016.
+% A. Selivanov and E. Fridman, "Predictor-based networked control in the presence of uncertain time-varying delays," in 55th IEEE Conference on Decision and Control, 2016, pp. 501–506.
 
 %% LMIs of Theorem 1
 % System parameters
